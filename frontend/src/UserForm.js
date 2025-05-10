@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 function UserForm() {
   const [formData, setFormData] = useState({
@@ -32,7 +33,6 @@ function UserForm() {
     <div className="container">
       <h2>User Registration</h2>
       <form onSubmit={handleSubmit}>
-        {/* Basic Info */}
         <div className="grid-two">
           <label>Full Name
             <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} />
@@ -64,8 +64,8 @@ function UserForm() {
           </label>
         </div>
 
-        {/* Address */}
         <div className="section-title">Address</div>
+
         <div className="grid-two">
           <label>Street
             <input type="text" name="street" value={formData.street} onChange={handleChange} />
@@ -88,8 +88,8 @@ function UserForm() {
           <input type="text" name="country" value={formData.country} onChange={handleChange} />
         </label>
 
-        {/* Identification */}
         <div className="section-title">Identification</div>
+
         <div className="grid-two">
           <label>ID Type
             <input type="text" name="idType" value={formData.idType} onChange={handleChange} />
