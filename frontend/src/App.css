@@ -38,6 +38,7 @@ select {
   margin-top: 4px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .section-title {
