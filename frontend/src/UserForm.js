@@ -31,7 +31,7 @@ function UserForm() {
 
   return (
     <div className="container">
-      <h2>❤️ User Registration</h2>
+      <h2>User Registration</h2>
       <form onSubmit={handleSubmit}>
         <div className="grid-two">
           <label>Full Name
